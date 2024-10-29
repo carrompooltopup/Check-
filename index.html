@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Diamond BD</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .diamond-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .diamond-grid button {
+            background-color: white;
+            color: black;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        .diamond-grid button.selected {
+            border-color: orange;
+        }
+
+        .uid-section {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #selected-price {
+            font-size: 20px;
+            color: orange;
+            margin-bottom: 10px;
+        }
+
+        #uid {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #buy-now {
+            width: 80%;
+            padding: 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #buy-now:hover {
+            background-color: #218838;
+        }
+
+        .bottom-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .bottom-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .bottom-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .verification-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .verification-modal h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .verification-modal input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .verification-modal button {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .verification-modal button:hover {
+            background-color: #218838;
+        }
+
+        .copy-number button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .copy-number button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="hamburger" onclick="window.location.href='https://chatgpt.com/'">&#9776;</span>
+        <h1>Garena FreeFire</h1>
+        <img src="https://i.ibb.co/5FZ6HmM/12559876.png" alt="Verification Logo">
+    </div>
+
+    <div class="container">
+        <h1>Free Fire Diamond BD</h1>
+        <div class="diamond-grid">
+            <button data-price="25">25 Diamonds - ৳25</button>
+            <button data-price="40">50 Diamonds - ৳40</button>
+            <button data-price="75">115 Diamonds - ৳75</button>
+            <button data-price="150">240 Diamonds - ৳150</button>
+            <button data-price="225">355 Diamonds - ৳225</button>
+            <button data-price="300">480 Diamonds - ৳300</button>
+            <button data-price="325">505 Diamonds - ৳325</button>
+            <button data-price="380">610 Diamonds - ৳380</button>
+            <button data-price="455">725 Diamonds - ৳455</button>
+            <button data-price="765">1240 Diamonds - ৳765</button>
+            <button data-price="1490">2530 Diamonds - ৳1,490</button>
+            <button data-price="2980">5060 Diamonds - ৳2,980</button>
+            <button data-price="4470">7590 Diamonds - ৳4,470</button>
+            <button data-price="5960">10120 Diamonds - ৳5,960</button>
+            <button data-price="7390">12650 Diamonds - ৳7,390</button>
+            <button data-price="75">EVO ACCESS: 3 DAY - ৳75</button>
+            <button data-price="110">EVO ACCESS: 7 DAY - ৳110</button>
+            <button data-price="330">EVO ACCESS: 30 DAY - ৳330</button>
+            <button data-price="150">Weekly Membership - ৳150</button>
+            <button data-price="750">Monthly Membership - ৳750</button>
+            <button data-price="150">Level Up Pass - ৳150</button>
+            <button data-price="45">Weekly Lite - ৳45</button>
+        </div>
+
+        <div class="uid-section">
+            <div id="selected-price">৳0</div>
+            <label for="uid">UID *</label>
+            <input type="text" id="uid" placeholder="আপনার UID এখানে দিন">
+            <button id="buy-now">Buy Now</button>
+        </div>
+
+        <div class="bottom-buttons">
+            <button id="live-chat">Live chat</button>
+            <button id="live-prove">Live prove</button>
+        </div>
+    </div>
+
+    <div class="verification-modal" id="verification-modal">
+        <h2>পেমেন্ট ভেরিফিকেশন</h2>
+        <input type="text" id="transaction-id" placeholder="আপনার Transaction ID দিন">
+        
+        <p>▪️ *167# ডায়াল করে আপনার NAGAD মোবাইল মেনুতে যান অথবা NAGAD অ্যাপে যান।</p>
+        <p>▪️ "Send Money" -এ ক্লিক করুন।</p>
+        <p class="copy-number">▪️ প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ 
+            <span id="recipient-number">01973011274</span> 
+            <button onclick="copyNumber()">Copy</button>
+        </p>
+        <p>▪️ টাকার পরিমাণঃ <span id="amount">150</span></p>
+        <p>▪️ নিশ্চিত করতে এখন আপনার NAGAD মোবাইল মেনু পিন লিখুন।</p>
+        <p>▪️ সবকিছু ঠিক থাকলে, আপনি NAGAD থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</p>
+        <p>▪️ এখন নিচের VERIFY বাটনে ক্লিক করুন।</p>
+
+        <button id="verify">VERIFY</button>
+    </div>
+
+    <script>
+        // JavaScript for selecting diamond price
+        const diamondButtons = document.querySelectorAll('.diamond-grid button');
+        const selectedPriceDisplay = document.getElementById('selected-price');
+        const amountSpan = document.getElementById('amount');
+
+        diamondButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                diamondButtons.forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+                const price = button.getAttribute('data-price');
+                selectedPriceDisplay.textContent = `৳${price}`;
+                amountSpan.textContent = price;
+            });
+        });
+
+        // Function to copy recipient number
+        function copyNumber() {
+            const recipientNumber = document.getElementById("recipient-number").textContent;
+            navigator.clipboard.writeText(recipientNumber)
+                .then(() => {
+                    alert("Number copied to clipboard!");
+                })
+                .catch(err => {
+                    console.error("Failed to copy text: ", err);
+                });
+        }
+
+        // Event listener for "Buy Now" button
+        document.getElementById('buy-now').addEventListener('click', () => {
+            document.getElementById('verification-modal').style.display = 'block';
+        });
+
+        // Event listener for "VERIFY" button
+        document.getElementById('verify').addEventListener('click', () => {
+            alert("Transaction Verified!");
+            document.getElementById('verification-modal').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
